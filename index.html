@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>誕生日パスワード</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎂 暗号は解けたかな！！</h1>
+
+<div id="login">
+  <h2>答えを入力してね</h2>
+  <h3>頑張ったから勘で打たずにちゃんと解いてね！！</h3>
+  <input type="text" id="password" placeholder="答えはここ">
+  <button onclick="checkPassword()">開ける</button>
+</div>
+
+<script>
+function checkPassword() {
+  const password = document.getElementById('password').value;
+  if(password === "HAPPYBIRTHDAY") {
+    window.location.href = "birthday.html";
+  } else {
+    alert("うーん、ちょっとちゃうか");
+  }
+}
+</script>
+
+</body>
+</html>
